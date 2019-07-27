@@ -1,0 +1,166 @@
+# 盒模型：
+- Margin(外边距) - 清除边框外的区域，外边距是透明的。
+- Border(边框) - 围绕在内边距和内容外的边框。
+- Padding(内边距) - 清除内容周围的区域，内边距是透明的。
+- Content(内容) - 盒子的内容，显示文本和图像。
+# 选择器的多种格式:
+- 简单选择器（Simple selectors）：通过元素类型、class 或 id 匹配一个或多个元素。例：id\class等
+- 属性选择器（Attribute selectors）：通过 属性 / 属性值 匹配一个或多个元素。例：id='title'等
+- 伪类（Pseudo-classes）：匹配处于确定状态的一个或多个元素，比如被鼠标指针悬停的元素，或当前
+被选中或未选中的复选框，或元素是DOM树中一父节点的第一个子节点。例：a:link {color: #FF0000}		/* 未访问的链接 */
+a:visited {color: #00FF00}	/* 已访问的链接 */
+a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+a:active {color: #0000FF}	/* 选定的链接 */
+- 伪元素（Pseudo-elements）:匹配处于相关的确定位置的一个或多个元素，例如每个段落的第一个字
+，或者某个元素之前生成的内容。例：:before，:after，:first-letter，:first-line等
+- 组合器（Combinators）：这里不仅仅是选择器本身，还有以有效的方式组合两个或更多的选择器用于
+非常特定的选择的方法。例如，你可以只选择divs的直系子节点的段落，或者直接跟在headings后面的
+段落。
+- 多重选择器（Multiple selectors）：这些也不是单独的选择器；这个思路是将以逗号分隔开的多个选择
+器放在一个CSS规则下面， 以将一组声明应用于由这些选择器选择的所有元素。
+# 各种边框与背景
+- 颜色color
+    - CSS 颜色使用组合了红绿蓝颜色值 (RGB) 的十六进制 (hex) 表示法进行定义。对光源进行设置的最低值可以是 0（十六进制 00）。最高值是 255（十六进制 FF）
+    - 用途：边框，背景，文字
+    - 十六进制色:使用三个双位数来编写，并以 # 符号开头，比如#0000ff 值显示为蓝色
+    - RGB 颜色:rgb(red, green, blue)。每个参数 (red、green 以及 blue) 定义颜色的强度，可以是介于 0与 255 之间的整数，或者是百分比值（从 0% 到 100%），rgb(0,0,255) 和rgb(0%,0%,100%)
+    - RGBA 颜色:是 RGB 颜色值的扩展，带有一个 alpha 通道 - 它规定了对象的不透明度alpha,参数是介于 0.0（完全透明）与 1.0（完全不透明）的数字,rgba(255,0,0,0.5);
+    - HSL 颜色:HSL 指的是 hue（色调）、saturation（饱和度）、lightness（亮度） - 表示颜色柱面坐标表示法hsl(hue, saturation, lightness)。Hue 是色盘上的度数（从 0 到 360） - 0 (或 360) 是红色，120 是绿色，240 是蓝色。Saturation 是百分比值；0% 意味着灰色，而 100% 是全彩。Lightness 同样是百分比值；0% 是黑色，100% 是白色。
+    - HSLA 颜色:比HSL多一个 alpha 通道 - 它规定了对象的不透明度hsla(hue, saturation, lightness, alpha).hsla(120,65%,75%,0.3)
+- 边框border
+    - border	在一个声明中设置所有的边框属性。
+    - border-bottom	在一个声明中设置所有的下边框属性。	
+    - border-bottom-color	设置下边框的颜色。
+    - border-bottom-style	设置下边框的样式。
+    - border-bottom-width	设置下边框的宽度。
+    - border-color	设置四条边框的颜色。
+    - border-left	在一个声明中设置所有的左边框属性。
+    - border-left-color	设置左边框的颜色。
+    - border-left-style	设置左边框的样式。
+    - border-left-width	设置左边框的宽度。
+    - border-right	在一个声明中设置所有的右边框属性。
+    - border-right-color	设置右边框的颜色。
+    - border-right-style	设置右边框的样式。
+    - border-right-width	设置右边框的宽度。
+    - border-style	设置四条边框的样式。
+    - border-top	在一个声明中设置所有的上边框属性。
+    - border-top-color	设置上边框的颜色。
+    - border-top-style	设置上边框的样式。
+    - border-top-width	设置上边框的宽度。
+    - border-width	设置四条边框的宽度。
+    - border-bottom-left-radius	定义边框左下角的形状。
+    - border-bottom-right-radius	定义边框右下角的形状。
+    - border-image	简写属性，设置所有 border-image-* 属性。
+    - border-image-outset	规定边框图像区域超出边框的量。
+    - border-image-repeat	图像边框是否应平铺(repeated)、铺满(rounded)或拉伸(stretched)。
+    - border-image-slice	规定图像边框的向内偏移。
+    - border-image-source	规定用作边框的图片。
+    - border-image-width	规定图片边框的宽度。
+    - border-radius	简写属性，设置所有四个 border-*-radius 属性。
+    - border-top-left-radius	定义边框左上角的形状。
+    - border-top-right-radius	定义边框右下角的形状。
+    - box-shadow	向方框添加一个或多个阴影。
+    - outline	在一个声明中设置所有的轮廓属性。
+    - outline-color	设置轮廓的颜色。
+    - outline-style	设置轮廓的样式。
+    - outline-width	设置轮廓的宽度。
+- 背景background
+    - background	在一个声明中设置所有的背景属性。
+    - background-attachment	设置背景图像是否固定或者随着页面的其余部分滚动。
+    - background-color	设置元素的背景颜色。
+    - background-image	设置元素的背景图像。
+    - background-position	设置背景图像的开始位置。
+    - background-repeat	设置是否及如何重复背景图像。
+    - background-clip	规定背景的绘制区域。
+    - background-origin	规定背景图片的定位区域。
+    - background-size	规定背景图片的尺寸。
+# 修改文本样式
+- 文本属性：
+    - color	设置文本的颜色。
+    - direction	规定文本的方向 / 书写方向。
+    - letter-spacing	设置字符间距。
+    - line-height	设置行高。
+    - text-align	规定文本的水平对齐方式。
+    - text-decoration	规定添加到文本的装饰效果。
+    - text-indent	规定文本块首行的缩进。
+    - text-shadow	规定添加到文本的阴影效果。
+    - text-transform	控制文本的大小写。
+    - unicode-bidi	设置文本方向。
+    - white-space	规定如何处理元素中的空白。
+    - word-spacing	设置单词间距。
+    - hanging-punctuation	规定标点字符是否位于线框之外。
+    - punctuation-trim	规定是否对标点字符进行修剪。
+    - text-align-last	设置如何对齐最后一行或紧挨着强制换行符之前的行。
+    - text-emphasis	向元素的文本应用重点标记以及重点标记的前景色。
+    - text-justify	规定当 text-align 设置为 "justify" 时所使用的对齐方法。
+    - text-outline	规定文本的轮廓。
+    - text-overflow	规定当文本溢出包含元素时发生的事情。
+    - text-shadow	向文本添加阴影。
+    - text-wrap	规定文本的换行规则。
+    - word-break	规定非中日韩文本的换行规则。
+    - word-wrap	允许对长的不可分割的单词进行分割并换行到下一行。
+- 字体属性：
+    - font	在一个声明中设置所有字体属性。
+    - font-family	规定文本的字体系列。
+    - font-size	规定文本的字体尺寸。
+    - font-size-adjust	为元素规定 aspect 值。
+    - font-stretch	收缩或拉伸当前的字体系列。
+    - font-style	规定文本的字体样式。
+    - font-variant	规定是否以小型大写字母的字体显示文本。
+    - font-weight	规定字体的粗细。
+# 布局
+- position定位
+    - relative：生成相对定位的元素，相对于其正常位置进行定位。因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+    - absolute：生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+    - fixed	生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+- float布局
+    - left	元素向左浮动。
+    - right	元素向右浮动。
+    - none	默认值。元素不浮动，并会显示在其在文本中出现的位置。
+    - inherit	规定应该从父元素继承 float 属性的值。
+- flexbox布局
+    - display: flex;
+    - justify-content 水平对齐元素
+        - flex-start: 元素和容器的左端对齐。
+        - flex-end: 元素和容器的右端对齐。
+        - center: 元素在容器里居中。
+        - space-between:元素之间保持相等的距离。
+        - space-around:元素周围保持相等的距离。
+    - align-items 纵向对齐元素
+        - flex-start: 元素与容器的顶部对齐。
+        - flex-end: 元素与容器的底部对齐。
+        - center: 元素纵向居中。
+        - baseline: 元素在容器的基线位置显示。
+        - stretch: 元素被拉伸以填满整个容器。 
+    - flex-direction 元素在容器里摆放的方向
+        - row: 元素摆放的方向和文字方向一致。
+        - row-reverse: 元素摆放的方向和文字方向相反。
+        - column: 元素从上放到下。
+        - column-reverse: 元素从下放到上。
+    - order: 元素的属性默认值为0,用数字来调整元素位置
+    - align-self：可控制单个元素值，覆盖align-items设定值，与align-items接收一样的属性值
+    - flex-wrap：定义元素必须为单行或自动换成多行
+        - nowrap: 所有的元素都在一行。
+        - wrap: 元素自动换成多行。
+        - wrap-reverse: 元素自动换成逆序的多行。 
+    - flex-flow：为flex-direction和flex-wrap两个属性组合，缩写属性接受两个属性的值，两个值中间以空格隔开
+    - align-content 决定行与行之间隔多远
+        - flex-start: 多行都集中在顶部。
+        - flex-end: 多行都集中在底部。
+        - center: 多行居中。
+        - space-between: 行与行之间保持相等距离。
+        - space-around: 每行的周围保持相等距离。
+        - stretch: 每一行都被拉伸以填满容器。
+- grid网格系统
+    - display: grid;
+    - grid-column-start：在网格列中定义元素的起始位置
+    - grid-column-end：在网格列中定义元素的结束位置
+    - grid-column：指grid-column-start和grid-column-end两个属性的缩写，两个值中间用/分开
+    - grid-row-start：在网格行中定义元素的起始位置
+    - grid-row-end:在网格行中定义元素的结束位置
+    - grid-row：指grid-row-start和grid-row-end两个属性的缩写，两个值中间用/分开
+    - grid-area: 接受4个由'/'分开的值：grid-row-start, grid-column-start, grid-row-end, 最后是grid-column-end。
+    - order:元素的属性默认值为0,用数字来调整元素位置
+    - grid-template-columns:指定网格中列的大小和名称
+    - grid-template-row:指定网格中行的大小和名称
+    - grid-template：grid-template-rows和grid-template-columns的缩写形式，行与列中间由/分开

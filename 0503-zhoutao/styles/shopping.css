@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+html{
+    background-color: rgb(68, 64, 64);
+}
+body{
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    width: 658px;
+    min-height: 100vh;
+}
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+    background-color: rgb(212, 209, 209);
+}
+.choice, .mini-menu{
+    display: flex;
+    justify-content: space-around;
+    margin-top:2px; 
+    font-size: 7px;
+    list-style-type: none;
+}
+select{
+    width: 51px;
+    height: 10px;
+    font-size: 7px;
+}
+.mini-menu li{
+    height: 7px;
+    padding-left: 7px;
+    padding-right:  7px;
+    border-right:1px solid rgb(236, 232, 232); 
+}
+.menu{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(219, 218, 218);
+}
+.menu>img{
+    margin-left:41px; 
+    height: 48px;
+    width: 96px;
+}
+.menu>ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 8px;
+}
+.menu>ul>li{
+    margin-top:20px;
+}
+.menu>ul>li>a{
+    margin-left:7.5px;
+    margin-right: 7.5px;
+}
+.menu>ul>a>img{
+    margin-top:16px;
+    height: 18px;
+    width: 18px;
+    margin-right:2px; 
+}
+.recommend{
+    position: relative;
+    background-image: url(../image-shop/timg.jpg);
+    background-size: 100% 100%;
+    height: 226px;
+    border-bottom:10px solid rgb(219, 218, 218);   
+}
+.recommend h3{
+    position: absolute;
+    text-align: center;
+    top:46px; 
+    right: 0px;
+    bottom: 0px;
+    height: 48px;
+    width: 277px;
+    left: 294px;
+    border-bottom: 3px solid #e7f7b0;
+    line-height: 48px;
+    font-size: 20px;
+}
+.recommend p{
+    position: absolute;
+    text-align: center;
+    left: 296px;
+    top:104px;
+    right: 0px;
+    bottom: 0px;
+    height: 28px;
+    width: 267px;
+    font-size: 9px;
+}
+.recommend>.mybutton{
+    position: absolute;
+    top:138px;
+    left: 398px;
+    right: 0px;
+    bottom: 0px;
+    height: 20px;
+    width: 70px;
+}
+
+.mybutton {
+	-moz-box-shadow: 0px 0px 15px 1px #93b1e6;
+	-webkit-box-shadow: 0px 0px 15px 1px #93b1e6;
+	box-shadow: 0px 0px 15px 1px #93b1e6;
+	background-color:#ffffff;
+	-moz-border-radius:19px;
+	-webkit-border-radius:19px;
+	border-radius:19px;
+	border:1px solid #c3ebc7;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Times New Roman;
+	font-size:8px;
+	font-weight:bold;
+	padding:4px 15px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #2f6627;
+}
+.mybutton:hover {
+	background-color:#d0d8f5;
+}
+.mybutton:active {
+	position:relative;
+	top:1px;
+}
+header{
+    margin-top:14px;
+    height: 297px; 
+}
+section{
+    height: 612px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    height: 579px;
+    width: 432px;
+    margin-left:41px; 
+}
+.main>div>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.product{
+    padding: 4px;
+    border: 1px solid rgb(211, 210, 210);
+    font-size:8px;
+    margin: 15px;
+    margin-left: 0px;
+}
+.product>div{
+    display: flex;
+    justify-content: space-between;
+}
+.product>div>a>img{
+    height: 15px;
+    width: 15px;
+}
+.product>a>img{
+    height: 124px;
+    width: 124px;
+}
+h5{
+    font-size: 10px;
+}
+.right-menu{
+    height: 415px;
+    width: 134px;
+    margin-top: 16px;
+    margin-right: 40px;
+}
+.right1{
+    height: 264px;
+    border: 1px solid rgb(214, 212, 212);
+    border-top:2px solid red;
+}
+.right-menu h5{
+    margin-left: 13.5px;
+    text-align: center;
+    width: 108px;
+    padding-top:11px;
+    padding-bottom: 11px; 
+    border-bottom:1px solid rgb(199, 196, 196) ;
+}
+.right-menu p{
+    text-align: center;
+    width: 111px;
+    height: 27px;
+    margin-left:12px; 
+    margin-top:13px; 
+    font-size: 7px;
+}
+.right-menu img{
+    width: 114px;
+    height: 116px;
+}
+.right-menu>ul>.mybutton{
+    position: relative;
+    left:34px;
+    margin-bottom: 20px; 
+}
+.slider-indicators{
+    position: relative;
+    height: 15px;
+    width: 134px;
+    text-align: center;
+    font-size: 0;
+    padding-top: 4px;
+    border-top: 2px solid rgb(214, 212, 212);
+    background-color: rgba(255,255,255,.3);
+}
+.slider-indicators li{
+    display: inline-block;
+    margin: 3px;
+}
+.slider-indicators a{
+    display: block;
+    padding-top: 8px;
+    width: 8px;
+    height: 0;
+    border-radius: 50%;
+    background: rgb(172, 168, 168);
+}
+.right2{
+    height: 133px;
+    width: 133px;
+    margin-top:14px; 
+    border: 1px solid rgb(214, 212, 212);
+    border-top:2px solid red;
+}
+.right2 input{
+    width: 106px;
+    height: 15px;
+    margin-left: 13px; 
+}
+.new-button {
+	background-color:#fa320a;
+	display:inline-block;
+    cursor:pointer;
+    width: 46px;
+    height: 21px;
+    margin-top: 8px;
+    margin-left: 44px; 
+	color:#ffffff;
+	font-family:Arial;
+	font-size:9px;
+    font-weight:bold;
+    padding-top: 4px; 
+    text-align: center;
+	text-decoration:none;
+}
+.new-button:hover {
+	background-color:#f08960;
+}
+.new-button:active {
+	position:relative;
+	top:1px;
+}
+.message{
+    height:57;
+    margin-bottom:12px; 
+    display: flex;
+    justify-content: left;
+}
+.message>ul{
+    margin-left:42px; 
+    width: 255px;
+    display: flex;
+    justify-content: left;
+}
+.message img{
+    height: 28px;
+    width: 28px;
+}
+.message p{
+    font-size: 9px;
+    margin-left: 14px;
+    margin-top: 8px; 
+}
+
+.button-menu{
+    height: 222px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(229, 226, 226);
+}
+.button-menu>div{
+    margin-top: 33px;
+}
+.button-menu h3{
+    font-size: 9px;
+}
+
+.button-menu p,.button-menu a{
+    font-size: 7px;
+}
+.button-menu img{
+    height: 18px;
+    width: 18px;
+    margin-right: 1px;
+}
+.help>p{
+    margin-bottom: 11px;
+}
+.footer-buttom{
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    background-color: #000000;
+    color: #e7e4e4;
+}
+.footer-buttom>div{
+    margin-left:45px;
+    margin-top:11px;
+    display: flex;
+    list-style-type: none;
+    margin-right:45px; 
+}
+.footer-buttom>div>li>a{
+    padding-right: 5px;
+    margin-right: 5px; 
+    border-right:1px solid   #e7e4e4;
+}
